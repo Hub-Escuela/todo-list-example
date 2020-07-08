@@ -2,8 +2,8 @@ import React from "react";
 
 export const NewToDo = (props) => {
   return (
-    <form>
-      <input type="text" onChange={handleChange} />
+    <form onSubmit={props.handleSubmit}>
+      <input type="text" onChange={props.handleChange} />
       <button type="submit">hola</button>
     </form>
   );
